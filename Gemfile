@@ -14,13 +14,12 @@ gem "redis", ">= 4.0.1"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem "rack-cors"
-gem "faraday"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "rspec-rails"
-  gem "webmock"
   gem "factory_bot_rails"
+  gem "webmock"
 end
 
 group :development do
