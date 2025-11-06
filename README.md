@@ -97,3 +97,4 @@ http://localhost:3000/api/v1/movies/search?q=Homem Aranha
 - docker-compose exec movie bundle exec rspec
 
 ## Link aplicação pública
+https://movie-4fd98fb60329.herokuapp.com/api/v1/movies/search?q=Homem Aranha
