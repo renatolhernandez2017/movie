@@ -20,9 +20,12 @@ services:
     depends_on:
       - db
     environment:
-      - RAILS_ENV=development
-      - TMDB_API_KEY=176311d8e9b8fb0b1175a6660534b975
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/movie_development
+      RAILS_ENV: development
+      TMDB_API_KEY: 176311d8e9b8fb0b1175a6660534b975
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/movie_development
+      MOVIE_URL: https://api.themoviedb.org/3/
+      MOVIE_TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNzYzMTFkOGU5YjhmYjBiMTE3NWE2NjYwNTM0Yjk3NSIsIm5iZiI6MTc2MjM0OTYxMC4yODQsInN1YiI6IjY5MGI1MjJhNTc0NzYxYjk5OTkzNGMyOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SkUd14zn1Q2R96BMdu9xMFb2o4kj1BzOzMTLVy0whmI
+      IMAGE_URL: https://image.tmdb.org/t/p/w500
 
 volumes:
   db_data:
